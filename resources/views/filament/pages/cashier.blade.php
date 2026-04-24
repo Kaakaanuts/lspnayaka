@@ -22,7 +22,7 @@
                         </div>
                     @empty
                         <div class="text-center py-6 text-gray-500">
-                            Belum ada data barang. Silakan tambah data di menu <b>Items</b> terlebih dahulu.
+                            Belum ada produk. Silahkan tambah produk di menu <b>Items</b> terlebih dahulu.
                         </div>
                     @endforelse
                 </div>

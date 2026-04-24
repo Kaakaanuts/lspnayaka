@@ -26,9 +26,8 @@ class CategoriesTable
                 EditAction::make(),
             ])
             ->toolbarActions([
-                BulkActionGroup::make([
-                    DeleteBulkAction::make(),
-                ]),
+                DeleteBulkAction::make()
+                    ->label('Hapus Kategori')
             ]);
     }
 }

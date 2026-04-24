@@ -33,7 +33,8 @@ class ItemsTable
                 TextColumn::make('stock')
                     ->label('Stok')
                     ->numeric()
-                    ->sortable(),
+                    ->sortable()
+                    ->color(fn ($state) => $state == 0 ? 'danger' : null),
             ])
             ->filters([
                 //
@@ -42,9 +43,8 @@ class ItemsTable
                 EditAction::make(),
             ])
             ->toolbarActions([
-                BulkActionGroup::make([
-                    DeleteBulkAction::make(),
-                ]),
+                DeleteBulkAction::make()
+                    ->label('Hapus Barang'),
             ]);
     }
 }

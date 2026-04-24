@@ -34,7 +34,10 @@ class ItemForm
                     ->label('Stok Saat Ini')
                     ->required()
                     ->numeric()
-                    ->minValue(0),
+                    ->rule('min:1')
+                    ->validationMessages([
+                        'min' => ' ',
+                    ]),
             ]);
     }
 }

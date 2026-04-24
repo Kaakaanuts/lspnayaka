@@ -16,7 +16,7 @@ class Cashier extends Page
 {
     protected string $view = 'filament.pages.cashier';
 
-    protected static ?string $navigationLabel = 'Kasir';
+    protected static ?string $navigationLabel = 'Transaksi';
 
     protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-shopping-cart';
 

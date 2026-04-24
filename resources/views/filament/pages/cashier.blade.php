@@ -53,11 +53,16 @@
                             <span>Total:</span>
                             <span>Rp {{ number_format($this->grandTotal, 0, ',', '.') }}</span>
                         </div>
-                        <div>
+                        <div class="">
                             <label class="block text-sm font-medium mb-1">Uang Bayar (Rp):</label>
-                            <input type="number" wire:model.live="pay_amount"
-                                   class="w-full bg-white dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg shadow-sm text-gray-950 dark:text-white px-3 py-2 focus:ring-primary-500 focus:border-primary-500"
-                                   placeholder="0">
+                            <x-filament::input.wrapper>
+                                <x-filament::input
+                                    type="number"
+                                    wire:model="pay_amount"
+                                    placeholder="0"
+                                    min="0"
+                                />
+                            </x-filament::input.wrapper>
                         </div>
                         <x-filament::button wire:click="checkout" color="primary" size="lg" class="w-full">
                             <span class="w-full text-center">Proses Pembayaran</span>

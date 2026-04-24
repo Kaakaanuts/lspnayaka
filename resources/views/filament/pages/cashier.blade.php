@@ -80,7 +80,7 @@
                 
                 <!-- Header Struk -->
                 <div style="text-align: center; margin-bottom: 1.25rem; border-bottom: 1px dashed #ccc; padding-bottom: 1rem;">
-                    <div style="font-size: 1.25rem; font-weight: 700;">STRUK PEMBELIAN</div>
+                    <div style="font-size: 1.25rem; font-weight: 700;">Struk Pembelian</div>
                     <div style="font-size: 0.75rem; color: #666; margin-top: 4px;">No. Transaksi: #{{ str_pad($receiptData['id'], 5, '0', STR_PAD_LEFT) }}</div>
                     <div style="font-size: 0.75rem; color: #666;">{{ \Carbon\Carbon::parse($receiptData['date'])->format('d/m/Y H:i') }}</div>
                     <div style="font-size: 0.75rem; color: #666;">Kasir: {{ $receiptData['kasir'] }}</div>
